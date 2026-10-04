@@ -23,6 +23,16 @@ export function SettingsProvider({ children }) {
 
   useEffect(() => { load(); }, [load]);
 
+  // Use the favicon uploaded in Admin → Settings (falls back to /favicon.svg)
+  const favicon = state.data?.settings?.favicon;
+  useEffect(() => {
+    if (!favicon) return;
+    let link = document.querySelector('link[rel="icon"]');
+    if (!link) { link = document.createElement('link'); link.rel = 'icon'; document.head.appendChild(link); }
+    link.removeAttribute('type');
+    link.href = favicon;
+  }, [favicon]);
+
   // Any API call answering "maintenance" switches the whole site to the notice
   useEffect(() => {
     const on = (e) => setMaintenance(e.detail || 'We will be back shortly.');

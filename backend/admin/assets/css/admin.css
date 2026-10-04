@@ -226,7 +226,8 @@ button.dining-table:hover { border-color: var(--vc-gold); box-shadow: 0 6px 18px
 .auth-card .brand { display: flex; flex-direction: column; align-items: center; gap: .5rem; margin-bottom: 1.25rem; text-align: center; }
 .auth-card .brand b { font: 600 1.7rem/1 var(--display); }
 .auth-card .brand small { font-size: .68rem; letter-spacing: .28em; text-transform: uppercase; color: var(--vc-gold-ink); }
-.auth-card .brand-mark rect, .auth-card .brand-mark path[stroke="#C9A24D"] { stroke: var(--vc-gold-ink); }
+.auth-card .brand-mark [stroke="#C9A24D"] { stroke: var(--vc-gold-ink); }
+.auth-card .brand-mark [fill="#C9A24D"] { fill: var(--vc-gold-ink); }
 .bare-main > .alert { width: min(420px, 100%); }
 .bare-stack { display: grid; gap: 1rem; justify-items: center; width: 100%; }
 

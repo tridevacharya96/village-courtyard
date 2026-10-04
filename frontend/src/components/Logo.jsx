@@ -1,15 +1,17 @@
 import { useState } from 'react';
 
-/** Courtyard-arch mark (SVG) used when no logo file is uploaded. */
+/** Courtyard-arch mark (same drawing as branding/logo-icon.svg), used when no logo file is uploaded. */
 export function LogoMark({ size = 42 }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 48 48" aria-hidden="true">
-      <rect x="1" y="1" width="46" height="46" rx="3" fill="none" stroke="#C9A24D" strokeWidth="1.5" />
-      <path d="M12 40V22a12 12 0 0 1 24 0v18" fill="none" stroke="#C9A24D" strokeWidth="2" />
-      <path d="M17 40V23a7 7 0 0 1 14 0v17" fill="none" stroke="#D9774A" strokeWidth="1.6" />
-      <path d="M24 13v5" stroke="#C9A24D" strokeWidth="1.4" />
-      <rect x="21.5" y="18" width="5" height="7" rx="1.5" fill="#C9A24D" />
-      <path d="M8 40h32" stroke="#C9A24D" strokeWidth="2" />
+    <svg width={size} height={size} viewBox="0 0 240 240" aria-hidden="true">
+      <path d="M48 212V112a72 72 0 0 1 144 0v100" fill="none" stroke="#C9A24D" strokeWidth="12" strokeLinecap="round" />
+      <path d="M76 212V120a44 44 0 0 1 88 0v92" fill="none" stroke="#D9774A" strokeWidth="8" strokeLinecap="round" />
+      <path d="M24 214h192" stroke="#C9A24D" strokeWidth="10" strokeLinecap="round" />
+      <path d="M120 4c15 9 17 24 0 34c-17-10-15-25 0-34z" fill="#C9A24D" />
+      <path d="M120 76v20" stroke="#C9A24D" strokeWidth="4" strokeLinecap="round" />
+      <path d="M110 104l4-8h12l4 8z" fill="#C9A24D" />
+      <rect x="105" y="104" width="30" height="38" rx="7" fill="#C9A24D" />
+      <rect x="112" y="111" width="16" height="24" rx="4" fill="#F6F0E4" />
     </svg>
   );
 }

@@ -1,0 +1,16 @@
+{
+  "name": "village-courtyard-branding",
+  "private": true,
+  "type": "module",
+  "description": "Regenerates the Village Courtyard logo PNGs and layered PSD from the SVG sources.",
+  "scripts": {
+    "export": "node export.mjs"
+  },
+  "dependencies": {
+    "ag-psd": "^24.0.0",
+    "sharp": "^0.34.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
