@@ -1,0 +1,10 @@
+# Village Courtyard backend
+Options -Indexes
+<FilesMatch "^\.env|\.(sql|log|md|lock)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Deny from all
+    </IfModule>
+</FilesMatch>
